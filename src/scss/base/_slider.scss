@@ -1,0 +1,82 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+.slider-title{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    z-index: 11;
+    div{
+        display: inline-block;
+        color: v.$blanco;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        border-radius: 50%;
+        h1{
+            margin: 0;
+            text-shadow: 0px 0px 20px rgba(0, 0, 0, 5);
+        }
+    }  
+    margin-bottom: 2rem;
+}
+.propiedades-slider{
+    margin-top: -29rem;
+    position: relative;
+    z-index: 10;
+    @include m.tablet {
+        margin-top: -40rem;
+    }
+}
+.slider{    
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    max-width: 80rem;
+    margin: 0 auto;    
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+    @include m.tablet {
+        border-radius: 2rem; 
+    }
+    .left-arrow,.right-arrow{
+        background-image: url('../img/arrow.svg');
+        background-repeat: no-repeat;
+        background-size: contain;        
+        display: block;
+        position: absolute;
+        width: 6rem;
+        height: 6rem;
+        top: 40%;
+        z-index: 11;    
+        cursor: pointer;
+        @include m.tablet {
+            width: 10rem;
+            height: 10rem;
+        }
+    }
+    .left-arrow{         
+        left: 1rem;
+    }
+    .right-arrow{ 
+        right: 1rem;
+        transform:scale(-1)
+    }
+}
+
+.slider--inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition: all 0.5s ease-in;
+    img{
+        width: 100%;
+        cursor: pointer;
+        mask-image: none;
+        z-index: 10;
+    }
+}
+
+.mover{
+    margin-top: -17rem;
+}

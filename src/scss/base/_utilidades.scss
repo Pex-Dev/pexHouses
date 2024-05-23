@@ -1,0 +1,22 @@
+@use '../base/variables' as v;
+.seccion {
+    margin-top: calc(v.$separacion / 2);
+    margin-bottom: calc(v.$separacion / 2);
+}
+.contenido-centrado {
+    max-width: 80rem;
+}
+
+.alinear-izquierda{
+    display: flex;
+    justify-content: flex-start;
+}
+.alinear-centro{
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+}
+.alinear-derecha{
+    display: flex;
+    justify-content: flex-end;
+}

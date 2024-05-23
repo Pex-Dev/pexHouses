@@ -1,0 +1,42 @@
+@use '../base/variables' as v;
+.dark-mode{
+    background-color: darken(v.$grisOscuro, 10);
+    p{
+        color: v.$blanco;
+    }
+    a,h1,h2,h3,h4{
+        color: v.$gris;
+    }
+    .anuncio{
+        background-color: v.$grisOscuro;
+        border: 1px solid v.$grisOscuro;
+        .icono{
+            filter: invert(100%);
+        }
+    }
+    .formulario{
+        color: v.$blanco;
+        legend,p{
+            color: v.$blanco;
+        }
+        input:not([type="submit"]),
+        textarea,
+        select{
+            background-color: v.$grisOscuro;
+            color: v.$blanco;
+        }
+    }
+    table{
+        td{
+            color: v.$blanco;
+        }
+    }
+    .entrada-blog{
+       background-color:  v.$grisOscuro;
+    }
+    .testimonial-persona{
+        img{
+            border: .5rem solid white;
+        }
+    }
+}

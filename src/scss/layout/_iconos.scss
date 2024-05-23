@@ -1,0 +1,16 @@
+@use '../base/mixins' as m;
+.iconos-nosotros{
+    @include m.tablet {
+        @include m.grid(3 , 2rem);   
+    }
+}
+
+.icono{
+    text-align: center;
+    img{
+        height: 10rem;
+    }
+    h3{
+        text-transform: uppercase;
+    }
+}

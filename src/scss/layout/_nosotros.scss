@@ -1,0 +1,9 @@
+@use '../base/mixins' as m;
+.nosotros{
+    @include m.tablet {
+        @include m.grid(2,3rem);
+        h4{
+            margin-top: 0;
+        }
+    }
+}
