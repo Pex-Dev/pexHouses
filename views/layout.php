@@ -11,7 +11,11 @@ $auth = $_SESSION['login'] ?? null;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienes Raíces</title>
+    <meta name="description" content="Venta de propiedades">
+    <meta name="keywords" content="HTML, CSS, JavaScript, PHP">
+    <meta name="author" content="PexWeb">
+    <title>Pex Houses</title>
+    <link rel="icon" type="image/x-icon" href="../build/img/icon.ico">
     <link rel="stylesheet" href="../build/css/app.css">
 </head>
 <body>
