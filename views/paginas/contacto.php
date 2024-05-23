@@ -1,7 +1,16 @@
 <main class="contenedor seccion">
     <?php if($mensajeRespuesta){ ?>
             <p class="alerta exito "><?php echo $mensajeRespuesta; ?></p>
-    <?php } 
+    <?php 
+        $nombre = '';
+        $mensaje = '';
+        $tipo = '';
+        $precio = '';
+        $contacto = '';
+        $telefono = '';
+        $fecha = '';
+        $hora = '';
+        } 
         foreach($errores as $error):
     ?> 
         <div class="alerta error" >
